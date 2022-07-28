@@ -3,7 +3,12 @@ import React from 'react'
 const Sidebar = ({notes, currentNote, setCurrentNote}) => {
 
   const noteElements = notes.map((note, index) => (
-    <div key={note.id}>
+    <div         
+      className={`title ${
+        note.id === currentNote.id ? "selected-note" : ""
+      }`}
+      onClick={() => setCurrentNote(note)}
+    >
       <h4>Note {index + 1}</h4>
     </div>
     )

@@ -28,6 +28,25 @@ body {
   padding: 12px;
 }
 
+.title {
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 15px; */
+}
+
+.selected-note {
+  background-color: dodgerblue;
+}
+
+.selected-note > h4 {
+  color: white;
+  font-weight: 700;
+}
+
 .split {
   display: flex;
 }
